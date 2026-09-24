@@ -2,43 +2,54 @@
 
 > **A modern Xbox 360 game archive experience, built for the web.**
 
+🌐 **[Visit XBLA Vault](https://xbla-vault.onrender.com/)**
+
 **XBLA Vault** is a fan-made web interface focused on making Xbox 360 game browsing more organized, visual, and enjoyable.
 
 Instead of navigating through a traditional file archive, XBLA Vault provides a **console-inspired interface** where users can browse game collections through large cards, cover artwork, controller navigation, sound effects, and dedicated sections.
 
-The goal is to make the experience feel less like browsing a file directory and more like navigating a digital Xbox 360 library. 🎮
+The website currently provides separate sections for **XBLA** and **Xbox 360 ISOs**, with controller-friendly navigation and a visual game-library experience.
+
+---
+
+## 🌐 Live Website
+
+### 🎮 [Open XBLA Vault](https://xbla-vault.onrender.com/)
+
+Browse the Xbox 360 game library directly from your browser.
+
+> **https://xbla-vault.onrender.com/**
 
 ---
 
 ## ✨ Features
 
-### 🎮 Console-Style Navigation
-
-XBLA Vault was designed around the idea of using the website like a console interface.
-
+* 🎮 Xbox 360-inspired interface
 * 🕹️ Xbox 360 controller support
 * 🎯 D-Pad navigation
 * 🔄 LB / RB section switching
-* 🎮 A button for selection
-* ↩️ B button for going back
-* ⌨️ Keyboard navigation support
+* 🔊 Sound effects when navigating between games
+* 🖼️ Game cover artwork
+* 📥 Download interface
+* 🔎 Game search
+* 📚 XBLA and ISO sections
+* ⚡ Lightweight and responsive interface
+* 🖥️ Designed for desktop and TV setups
 
-### 🖼️ Visual Game Library
+---
 
-Games are displayed using visual cards rather than a simple list of filenames.
+## 🎮 Controller Support
 
-* Game artwork
-* Game title
-* Download option
-* Interactive selection state
-* Smooth navigation
-* Audio feedback
+| Button          | Action           |
+| --------------- | ---------------- |
+| **D-Pad ↑ / ↓** | Navigate         |
+| **D-Pad ← / →** | Change game      |
+| **A**           | Select           |
+| **B**           | Go back          |
+| **LB**          | Previous section |
+| **RB**          | Next section     |
 
-### 🔊 Audio Feedback
-
-XBLA Vault includes sound effects throughout the interface.
-
-When moving between game cards, the interface can play an audio cue, making navigation feel more responsive and giving the website a more game-like atmosphere.
+The website is designed to work particularly well with an Xbox 360 controller connected to a PC.
 
 ---
 
@@ -46,165 +57,68 @@ When moving between game cards, the interface can play an audio cue, making navi
 
 ### 🟢 XBLA
 
-The **XBLA** section focuses on Xbox Live Arcade titles and uses an external archive as its content source.
+Browse Xbox Live Arcade games through a visual library interface.
 
 ### 🔵 Xbox 360 ISOs
 
-The **ISOs** section focuses on disc-based Xbox 360 games and uses an external archive as its content source.
+Browse Xbox 360 disc-based games through a dedicated section.
 
 ---
 
-## 🎮 Controller Support
+## 🎨 Interface
 
-| Button      | Action            |
-| ----------- | ----------------- |
-| **D-Pad ↑** | Navigate upward   |
-| **D-Pad ↓** | Navigate downward |
-| **D-Pad ←** | Previous game     |
-| **D-Pad →** | Next game         |
-| **A**       | Select            |
-| **B**       | Back              |
-| **LB**      | Previous section  |
-| **RB**      | Next section      |
+XBLA Vault takes inspiration from console game libraries instead of traditional file browsers.
 
-The interface is especially suited for PCs connected to a TV with an Xbox 360 controller.
-
----
-
-## 🖥️ Interface
-
-The interface takes inspiration from console game libraries rather than traditional file archives.
-
-The design focuses on:
+The interface focuses on:
 
 * Large game cards
 * Game artwork
 * Clear navigation
-* Minimal interface clutter
-* Controller interaction
-* Section-based browsing
-* Interactive feedback
+* Search
+* Controller support
 * Sound effects
+* Separate content sections
+* Simple download actions
 
-The objective is to make the website feel closer to navigating a **digital game library**.
-
----
-
-## ⚡ Performance
-
-XBLA Vault is designed to remain lightweight while handling a potentially large game catalog.
-
-The interface focuses on:
-
-* Efficient game loading
-* Lightweight client-side interactions
-* Responsive navigation
-* Fast card selection
-* Simple visual presentation
-
----
-
-## 🌐 Web-Based
-
-XBLA Vault runs directly in the browser and does not require a dedicated desktop application for the interface itself.
-
-The project is designed to work particularly well on PCs connected to televisions.
-
-### Example setup
-
-```text
-PC
- │
- ├── TV
- │
- └── Xbox 360 Controller
-          │
-          ▼
-      XBLA Vault
-```
-
----
-
-## 🎨 Project Philosophy
-
-XBLA Vault was created around a simple idea:
-
-> **Game archives don't have to look like file managers.**
-
-Large collections can become difficult to navigate when everything is presented as filenames, folders, and direct links.
-
-XBLA Vault attempts to solve that problem by presenting the collection as a visual game library.
-
-The emphasis is on **discoverability, navigation, and presentation**.
-
----
-
-## 🛠️ Technologies
-
-XBLA Vault is built using:
-
-* **HTML5**
-* **CSS3**
-* **JavaScript**
-* **Node.js**
-
-JavaScript handles the interactive portions of the interface, including navigation, controller input, game selection, and audio feedback.
+The goal is to make browsing a large archive feel more like browsing a **digital console library**.
 
 ---
 
 ## 📦 Content Sources
 
-XBLA Vault uses external archives as sources for the game catalogs presented through the website.
+The website uses external archives as sources for its game catalogs.
 
 ### 🟢 XBLA
 
-**Internet Archive — Xbox 360 XBLA collection**
+**Internet Archive — Xbox 360 XBLA**
 
-[Archive.org — Xbox 360 XBLA](https://archive.org/download/XBOX_360_XBLA?utm_source=chatgpt.com)
+[Archive.org](https://archive.org/download/XBOX_360_XBLA)
 
 ### 🔵 Xbox 360 ISOs
 
 **Minerva Archive — Redump / Microsoft Xbox 360**
 
-[Minerva Archive — Microsoft Xbox 360](https://minerva-archive.org/browse/Redump/Microsoft%20-%20Xbox%20360/?utm_source=chatgpt.com)
-
-These services are credited as the external sources used by the project. XBLA Vault does not claim ownership of their archives or the copyrighted content contained within them.
+[Minerva Archive](https://minerva-archive.org/browse/Redump/Microsoft%20-%20Xbox%20360/)
 
 ---
 
 ## 🙏 Credits
 
-Special thanks to the projects and services that make the external game archives used by XBLA Vault available:
+Special thanks to the external archives used as sources for the project's catalogs.
 
 ### Internet Archive
 
-Used as the source for the **Xbox 360 XBLA catalog**.
-
-**Website:** [Internet Archive](https://archive.org/?utm_source=chatgpt.com)
+Source used for the Xbox 360 XBLA collection.
 
 ### Minerva Archive
 
-Used as the source for the **Xbox 360 ISO catalog**.
+Source used for the Xbox 360 ISO collection.
 
-**Website:** [Minerva Archive](https://minerva-archive.org/?utm_source=chatgpt.com)
+### Microsoft / Xbox
 
-### Xbox / Microsoft
+Xbox 360, Xbox, Xbox Live, game names, trademarks, logos, and related intellectual property belong to their respective owners.
 
-The Xbox 360 platform, Xbox trademarks, game titles, logos, and related intellectual property belong to their respective owners.
-
-XBLA Vault is an **unofficial fan-made project** and has no affiliation with Microsoft or Xbox.
-
----
-
-## 💙 About the Project
-
-XBLA Vault is a personal fan project created to provide a more enjoyable way to browse Xbox 360 game archives.
-
-The idea is simple:
-
-> **A game library should look like a game library.**
-
-Instead of searching through folders and filenames, users can browse games visually, navigate with a controller, hear interface feedback, and access the available download options from a single interface.
+XBLA Vault is an independent fan-made project and is **not affiliated with Microsoft or Xbox**.
 
 ---
 
@@ -214,16 +128,16 @@ XBLA Vault is an ongoing project.
 
 Future improvements may include:
 
-* 🔎 Better search
-* 🏷️ Game filtering
-* 🎮 Additional controller support
+* 🔎 Improved search
+* 🏷️ Advanced filtering
+* 🎮 Additional controller functionality
 * 🔊 More interface sounds
 * ✨ Improved animations
-* 🖼️ Improved artwork
-* 📱 Better responsive support
+* 🖼️ Better artwork
+* 📱 Improved responsive support
 * ⚡ Performance improvements
-* 📚 Expanded game catalogs
-* 🎨 Additional UI customization
+* 📚 Expanded catalogs
+* 🎨 More UI customization
 
 ---
 
@@ -233,30 +147,14 @@ Future improvements may include:
 
 It is **not affiliated with, sponsored by, endorsed by, or officially connected to Microsoft, Xbox, or Xbox Live.**
 
-The project does not claim ownership of the games, artwork, trademarks, or other copyrighted material referenced by the external sources.
-
-The external archives listed above are credited solely as sources used by the website.
+The project does not claim ownership of the games, artwork, trademarks, or other copyrighted material referenced through external sources.
 
 Users are responsible for complying with the laws applicable to them and for having the necessary rights to access or use copyrighted content.
 
 ---
 
-## 🎮 Built for Gamers
+## 🎮 XBLA Vault
 
-From controller navigation to the small sound effects when moving between games, XBLA Vault is designed around the feeling of browsing a console game library.
+> **Browse. Discover. Navigate. Download.**
 
-**Browse.**
-
-**Select.**
-
-**Download.**
-
-**Enjoy the library.** 🎮✨
-
----
-
-### ⭐ XBLA Vault
-
-**A web-based Xbox 360 game archive interface.**
-
-**Browse • Discover • Navigate • Download**
+### 🌐 [Visit the website →](https://xbla-vault.onrender.com/)
