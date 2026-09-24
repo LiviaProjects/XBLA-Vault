@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XboxVault 360</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="grid-bg"></div>
+</div>
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="xbox-logo">
+            <span>×</span>
+        </div>
+
+        <div class="brand-text">
+            <strong>Xbox<span>Vault</span></strong>
+            <small>XBOX 360 DIGITAL ARCHIVE</small>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <button class="nav active" data-page="xbla">
+            <span class="nav-icon">🎮</span>
+            XBLA
+        </button>
+
+        <button class="nav" data-page="isos">
+            <span class="nav-icon">💿</span>
+            ISOs
+        </button>
+
+    </nav>
+
+    <div class="header-status">
+        <span class="status-dot"></span>
+        <span id="count">0 jogos</span>
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <span></span>
+                XBOX 360 ARCHIVE
+            </div>
+
+            <h1>
+                Sua biblioteca.
+                <br>
+                <span>Em um só lugar.</span>
+            </h1>
+
+            <p>
+                Explore a coleção Xbox 360, pesquise seus jogos
+                favoritos e encontre os arquivos disponíveis no arquivo.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="hero-button" onclick="document.getElementById('search').focus()">
+                    🔎 Pesquisar biblioteca
+                </button>
+
+                <button class="hero-button secondary" onclick="changePage('isos')">
+                    💿 Ver ISOs
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-console">
+
+            <div class="console-glow"></div>
+
+            <div class="console">
+                <div class="console-top"></div>
+
+                <div class="console-disc"></div>
+
+                <div class="console-light"></div>
+
+                <div class="console-port"></div>
+
+            </div>
+
+            <div class="console-label">
+                <strong>XBOX 360</strong>
+                <small>ARCHIVE SYSTEM</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="library">
+
+        <div class="section-header">
+
+            <div>
+
+                <div class="section-label">
+                    <span></span>
+                    <span id="sectionType">XBOX LIVE ARCADE</span>
+                </div>
+
+                <h2 id="title">
+                    Biblioteca XBLA
+                </h2>
+
+                <p>
+                    Explore todos os arquivos disponíveis.
+                </p>
+
+            </div>
+
+            <a
+                id="source"
+                class="source-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Fonte ↗
+            </a>
+
+        </div>
+
+
+        <div class="toolbar">
+
+            <div class="search-box">
+
+                <div class="search-icon">
+                    🔎
+                </div>
+
+                <input
+                    id="search"
+                    type="search"
+                    autocomplete="off"
+                    placeholder="Pesquisar por nome..."
+                >
+
+                <kbd>CTRL</kbd>
+                <kbd>K</kbd>
+
+            </div>
+
+            <div class="toolbar-info">
+                <span id="resultCount">0 resultados</span>
+            </div>
+
+        </div>
+
+
+        <div id="loading" class="loading">
+
+            <div class="loader"></div>
+
+            <strong>Carregando biblioteca</strong>
+
+            <span>
+                Buscando catálogo...
+            </span>
+
+        </div>
+
+
+        <div id="grid" class="grid"></div>
+
+
+        <div id="loadMore" class="load-more-container">
+            <button class="load-more" onclick="loadMore()">
+                Mostrar mais jogos
+                <span>↓</span>
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-brand">
+        <div class="mini-logo">×</div>
+
+        <div>
+            <strong>XboxVault 360</strong>
+            <span>Biblioteca digital</span>
+        </div>
+    </div>
+
+    <div class="footer-center">
+        <span>🎮</span>
+        Compatível com controle Xbox
+    </div>
+
+    <div class="footer-right">
+        Catálogo automático
+    </div>
+
+</footer>
+
+
+<div id="toast" class="toast">
+    <span>✓</span>
+    <div>
+        <strong>Selecionado</strong>
+        <small id="toastText"></small>
+    </div>
+</div>
+
+
+<script src="script.js?v=9999"></script>
+
+</body>
+</html>
